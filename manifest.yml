@@ -4,4 +4,7 @@ category: Interactive Apps
 subcategory: Servers
 role: batch_connect
 description: |
-  This app will launch a JupyterLab with preinstalled Tensorflow
+  This app will launch a JupyterLab with
+  * Python 3.5
+  * TensorFlow 2.11.0
+  * CUDA 11.7.0
