@@ -1,0 +1,13 @@
+---
+batch_connect:
+  template: "basic"
+
+script:
+  native:
+          - "-N 1"
+          - "--partition=gpu_int"
+          - "--gres=gpu:a100:<%= slot_cnt %>"
+          - "--cpus-per-task"
+          - "<%= slot_cnt.to_i * 16 %>"
+          - "--mem=<%= slot_cnt.to_i * 250 %>"
+          - "--time=<%= num_hours.to_i * 60 %>"

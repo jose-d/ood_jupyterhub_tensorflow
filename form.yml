@@ -1,0 +1,49 @@
+---
+cluster: "phoebev1"
+
+attributes:
+  # Set the corresponding modules that need to be loaded for Jupyter to run
+  #
+  # @note It is called within the batch job as `module load <modules>` if
+  #   defined
+  # @example Do not load any modules
+  #     modules: ""
+  # @example Using default python module
+  #     modules: "python"
+  # @example Using specific python module
+  #     modules: "python/3.5"
+  # @example Using combination of modules
+  #     modules: "python/3.5 cuda/8.0.44"
+  modules: "JupyterLab/3.5.0-GCCcore-11.3.0 matplotlib/3.5.2-foss-2022a PyYAML/6.0-GCCcore-11.3.0"
+
+  extra_jupyter_args: ""
+
+  num_hours:
+          label: Session duration
+          widget: select
+          options:
+                  - [ "8h", "8"]
+                  - [ "24h", "24"]
+                  - [ "1week", "168"]
+                  - [ "14 days", "336" ]
+          value: "24"
+
+  slot_cnt:
+    label: Instance size
+    help: select instance size
+    widget: select
+    options:
+      - [ "1 GPUs (+16cpu)", "1" ]
+      - [ "2 GPUs (+32cpu)", "2" ]
+      - [ "3 GPUs (+48cpu)", "3" ]
+      - [ "4 GPUs (+64cpu)", "4" ]
+      - [ "5 GPUs (+80cpu)", "5" ]
+      - [ "6 GPUs (+96cpu)", "6" ]
+      - [ "7 GPUs (+112cpu)", "7" ]
+      - [ "8 GPUs (+128cpu)", "8" ]
+
+form:
+  - modules
+  - extra_jupyter_args
+  - num_hours
+  - slot_cnt
