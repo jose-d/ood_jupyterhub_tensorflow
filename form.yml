@@ -14,7 +14,7 @@ attributes:
   #     modules: "python/3.5"
   # @example Using combination of modules
   #     modules: "python/3.5 cuda/8.0.44"
-  modules: "JupyterLab/3.5.0-GCCcore-11.3.0 matplotlib/3.5.2-foss-2022a PyYAML/6.0-GCCcore-11.3.0 OpenCV/4.6.0-foss-2022a-CUDA-11.7.0-contrib TensorFlow/2.11.0-foss-2022a-CUDA-11.7.0 PyTorch/1.12.1-foss-2022a-CUDA-11.7.0 torchvision/0.13.1-foss-2022a-CUDA-11.7.0 BeautifulSoup/4.10.0-GCCcore-11.3.0"
+  modules: "JupyterLab/3.5.0-GCCcore-11.3.0 matplotlib/3.5.2-foss-2022a PyYAML/6.0-GCCcore-11.3.0 OpenCV/4.6.0-foss-2022a-CUDA-11.7.0-contrib TensorFlow/2.11.0-foss-2022a-CUDA-11.7.0 PyTorch/1.12.1-foss-2022a-CUDA-11.7.0 torchvision/0.13.1-foss-2022a-CUDA-11.7.0 BeautifulSoup/4.10.0-GCCcore-11.3.0 scikit-learn/1.1.3-foss-2022a ipympl/0.9.3-foss-2022a"
 
   extra_jupyter_args: ""
 
